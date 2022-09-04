@@ -1,6 +1,6 @@
 # Getting Started with Beautiful Calculator
 
-Go to http://150.136.60.27:9000 to use the beautiful calculator
+Go to http://calculator.s1mondev.com to use the beautiful calculator
 
 ## About
 
