@@ -25,7 +25,6 @@ function Calculator() {
     return (
         <div style={{ "width": displayWidth,"height":displayHeight, "display": "flex", "flexWrap": "wrap", "justifyContent": "center" }}>
             <div className="display" style={{"width": displayWidth , "height": btnSize}}>{ops}</div>
-
             {numbers.map((n) =>
                 <button className="numbers" onClick={() => { setOps(ops + n) }} style={{"width" : btnSize, "height": btnSize}}>{n}</button>
             )}
