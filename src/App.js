@@ -1,9 +1,27 @@
+import Bar from "./component/Bar";
 import Calculator from "./component/Calculator";
+
+import { ChakraProvider } from "@chakra-ui/react";
+
 function App() {
   return (
-    <div className="App" style={{"width": "100vw", "height": "100vh", "display": "flex", "justifyContent": "center", "alignItems": "center"}}>
-      <Calculator/>
-    </div>
+    <ChakraProvider>
+      <div style={{ overflow: "hidden", overflowX: "hidden" }}>
+        <Bar />
+        <div
+          className="App"
+          style={{
+            width: "100vw",
+            height: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Calculator />
+        </div>
+      </div>
+    </ChakraProvider>
   );
 }
 
