@@ -6,7 +6,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 function App() {
   return (
     <ChakraProvider>
-      <div style={{ overflow: "hidden", overflowX: "hidden" }}>
+      <div>
         <Bar />
         <div
           className="App"
