@@ -40,7 +40,7 @@ function Calculator() {
         justifyContent: "center",
       }}
     >
-      <div className="display" style={{ width: displayWidth, height: btnSize }}>
+      <div className="display" style={{ width: displayWidth, height: btnSize ,backgroundColor:"#8badc0"}}>
         {ops}
       </div>
       {numbers.map((n) => (
@@ -78,7 +78,7 @@ function Calculator() {
         onClick={() => {
           pushOperator("+");
         }}
-        style={{ width: btnSize, height: btnSize }}
+        style={{ width: btnSize, height: btnSize}}
       >
         +
       </button>
@@ -114,7 +114,7 @@ function Calculator() {
         onClick={() => {
           calculate();
         }}
-        style={{ width: btnSize, height: btnSize }}
+        style={{ width: btnSize, height: btnSize, backgroundColor:"#f2f7f6" }}
       >
         =
       </button>
@@ -124,7 +124,7 @@ function Calculator() {
         onClick={() => {
           setOps(ops.slice(0, -1));
         }}
-        style={{ width: btnSize, height: btnSize }}
+        style={{ width: btnSize, height: btnSize ,backgroundColor:"#d6e7e7"}}
       >
         Back
       </button>
@@ -133,7 +133,7 @@ function Calculator() {
         onClick={() => {
           setOps("");
         }}
-        style={{ width: btnSize, height: btnSize }}
+        style={{ width: btnSize, height: btnSize ,backgroundColor:"#b3cad7"}}
       >
         Clear
       </button>
